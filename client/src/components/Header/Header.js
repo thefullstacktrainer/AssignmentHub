@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css'
 
 const Header = ({ isLoggedIn, onLogout }) => {
     return (
         <header className="flex justify-between items-center p-4 bg-gray-100 border-b border-gray-300">
             <div className="flex items-center">
                 <Link to="/">
-                    <img src="" alt="Assignment Hub Logo" className="w-48" />
+                    <img src={`assets/images/logo.jpeg`}
+                        alt="Assignment Hub Logo"
+                        className="h-10" />
                 </Link>
             </div>
             <nav className="flex gap-4">
