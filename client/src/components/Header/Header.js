@@ -11,6 +11,7 @@ const Header = ({ isLoggedIn, onLogout }) => {
             </div>
             <nav className="flex gap-4">
                 <Link to="/" className="text-black no-underline">Home</Link>
+                {isLoggedIn && <Link to="/dashboard" className="text-black no-underline">Dashboard</Link>}
                 {isLoggedIn && <Link to="/assignments" className="text-black no-underline">Assignments</Link>}
                 {isLoggedIn && <Link to="/profile" className="text-black no-underline">Profile</Link>}
                 {!isLoggedIn && <Link to="/login" className="text-black no-underline">Login</Link>}
